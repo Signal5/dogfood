@@ -1,0 +1,911 @@
+#banner-336x300,
+#banner-120x600,
+#banner-728x90{
+    margin: 0;
+}
+
+
+
+/**********************
+*****banner-336x300****
+***********************/
+
+#banner-336x300{
+    height: 300px;
+    width: 336px;
+}
+
+
+#banner-336x300 #bottom-bg{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    
+    visibility: hidden;
+    animation: slideinbottom 2s ease 0s forwards;
+    -webkit-animation: slideinbottom 2s ease 0s forwards;
+    -o-animation: slideinbottom 2s ease 0s forwards;
+    -moz-animation: slideinbottom 2s ease 0s forwards;
+}
+
+#banner-336x300 #top-bg{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0;
+    
+    visibility: hidden;
+    animation: slidein 2s ease 0s forwards;
+    -webkit-animation: slidein 2s ease 0s forwards;
+    -o-animation: slidein 2s ease 0s forwards;
+    -moz-animation: slidein 2s ease 0s forwards;
+}
+
+
+#banner-336x300 #food{
+    position: absolute;
+    top: 135px;
+    left: 15px;
+    z-index: 1;
+    
+    opacity: 0;
+    animation: 2s food ease 2s forwards;
+    -webkit-animation: 2s food ease 2s forwards;
+    -moz-animation: 2s food ease 2s forwards;
+    -o-animation: 2s food ease 2s forwards;
+}
+
+#banner-336x300 #stamp{
+    position: absolute;
+    top: 180px;
+    right: 26px;
+    z-index: 0;
+    
+    opacity: 0;
+    animation: 2s stamp-336 ease 4s forwards;
+    -webkit-animation: 2s stamp-336 ease 4s forwards;
+    -moz-animation: 2s stamp-336 ease 4s forwards;
+    -o-animation: 2s stamp-336 ease 4s forwards;
+}
+
+
+
+#banner-336x300 h1{
+    
+    font-family: 'Oswald', sans-serif;
+    position: absolute;
+    top: 15px;
+    left: 75px;
+    color: #496d20;
+    font-size: 30px;
+    font-weight: bold;
+    z-index: 1;
+    
+    opacity: 0;
+    animation: 2s h1-336 linear 6s forwards;
+    -webkit-animation: 2s h1-336 linear 6s forwards;
+    -moz-animation: 2s h1-336 linear 6s forwards;
+    -o-animation: 2s h1-336 linear 6s forwards;
+    
+}
+
+
+#banner-336x300 h2{
+    
+    font-family: 'Julee', cursive;
+    font-size: 20px;
+    font-weight: lighter;
+    color: #fdfdfd;
+    position: absolute;
+    top: 60px;
+    left: 45px;
+    line-height: 28px;
+    text-align: center;
+    z-index: 1;
+    
+    opacity: 0;
+    animation: 2s h2-336 linear 8s forwards;
+    -webkit-animation: 2s h2-336 linear 8s forwards;
+    -moz-animation: 2s h2-336 linear 8s forwards;
+    -o-animation: 2s h2-336 linear 8s forwards;
+}
+
+
+#banner-336x300 h4{
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    color: #496d20;
+    font-size: 12px;
+    text-decoration: none;
+    bottom: 7px;
+    font-weight: bolder;
+    left: 17px;
+    z-index: 1;
+    
+    opacity: 0;
+    animation: 2s h4-336 linear 12s forwards;
+    -webkit-animation: 2s h4-336 linear 12s forwards;
+    -moz-animation: 2s h4-336 linear 12s forwards;
+    -o-animation: 2s h4-336 linear 12s forwards;
+}
+
+
+#banner-336x300 span{
+
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    color: #fdfdfd;
+    font-weight: bold;
+    background: #496d20;
+    border-radius: 10px;
+    padding: 0 25px;
+    line-height: 34px;
+    font-size: 14px;
+    z-index: 1;
+    position: absolute;
+    top: 135px;
+    right: 20px;
+    letter-spacing: 1px;
+    
+    opacity: 0;
+    animation: 2s span-336 ease 10s forwards;
+    -webkit-animation: 2s span-336 ease 10s forwards;
+    -moz-animation: 2s span-336 ease 10s forwards;
+    -o-animation: 2s span-336 ease 10s forwards;
+
+}
+
+
+
+
+/**********************
+*****animáció-336x300****
+***********************/
+
+@-webkit-keyframes slidein {
+    0%{ top: -600px; visibility: visible;}
+    100%{top: 0; visibility: visible;}
+}
+
+@-o-keyframes slidein {
+    0%{ top: -600px; visibility: visible;}
+    100%{top: 0; visibility: visible;}
+}
+
+@-moz-keyframes slidein {
+    0%{ top: -600px; visibility: visible;}
+    100%{top: 0; visibility: visible;}
+}
+
+@keyframes slidein {
+    0%{ top: -600px; visibility: visible;}
+    100%{top: 0; visibility: visible;}
+}
+
+
+
+
+@-webkit-keyframes slideinbottom {
+    0%{ bottom: -200px; visibility: visible;}
+    100%{bottom: 0; visibility: visible;}
+}
+
+@-o-keyframes slideinbottom {
+    0%{ bottom: -200px; visibility: visible;}
+    100%{bottom: 0; visibility: visible;}
+}
+
+@-moz-keyframes slideinbottom {
+    0%{ bottom: -200px; visibility: visible;}
+    100%{bottom: 0; visibility: visible;}
+}
+
+@keyframes slideinbottom {
+    0%{ bottom: -200px; visibility: visible;}
+    100%{bottom: 0; visibility: visible;}
+}
+
+
+@keyframes food {
+    from {left: -200px; }
+    to {left: 15px; opacity: 1;}
+}
+@-webkit-keyframes food {
+    from {left: -200px; }
+    to {left: 15px; opacity: 1;}
+}
+@-moz-keyframes food {
+    from {left: -200px; }
+    to {left: 15px; opacity: 1;}
+}
+@-o-keyframes food {
+    from {left: -200px; }
+    to {left: 15px; opacity: 1;}
+}
+
+
+
+@keyframes h1-336 {
+    from {left: -75px; opacity: 0;}
+    to {left: 75px; opacity: 1;}
+}
+@-webkit-keyframes h1-336 {
+    from {left: -75px; opacity: 0;}
+    to {left: 75px; opacity: 1;}
+}
+@-moz-keyframes h1-336 {
+    from {left: -75px; opacity: 0;}
+    to {left: 75px; opacity: 1;}
+}
+@-o-keyframes h1-336 {
+    from {left: -75px; opacity: 0;}
+    to {left: 75px; opacity: 1;}
+}
+
+
+@-webkit-keyframes stamp-336 {
+    from { right: -26px; transform: rotate(0deg); }
+    to { right: 26px;transform: rotate(-360deg); opacity: 1; }
+}
+@-o-keyframes stamp-336 {
+    from { right: -26px; transform: rotate(0deg); }
+    to { right: 26px;transform: rotate(-360deg); opacity: 1;}
+}
+@-moz-keyframes stamp-336 {
+    from { right: -26px; transform: rotate(0deg); }
+    to { right: 26px;transform: rotate(-360deg); opacity: 1;}
+}
+@keyframes stamp-336 {
+    from { right: -26px; transform: rotate(0deg); }
+    to { right: 26px;transform: rotate(-360deg); opacity: 1;}
+}
+
+
+@keyframes h2-336 {
+    from {left: -45px; opacity: 0;}
+    to {left: 45px; opacity: 1;}
+}
+@-webkit-keyframes h2-336 {
+    from {left: -45px; opacity: 0;}
+    to {left: 45px; opacity: 1;}
+}
+@-moz-keyframes h2-336 {
+    from {left: -45px; opacity: 0;}
+    to {left: 45px; opacity: 1;}
+}
+@-o-keyframes h2-336 {
+    from {left: -45px; opacity: 0;}
+    to {left: 45px; opacity: 1;}
+}
+
+
+@keyframes span-336 {
+    from {right: -20px; }
+    to {right: 20px; opacity: 1;}
+}
+@-webkit-keyframes span-336 {
+    from {right: -20px; }
+    to {right: 20px; opacity: 1;}
+}
+@-moz-keyframes span-336 {
+    from {right: -20px; }
+    to {right: 20px; opacity: 1;}
+}
+@-o-keyframes span-336 {
+    from {right: -20px; }
+    to {right: 20px; opacity: 1;}
+}
+
+
+@keyframes h4-336 {
+    from {left: -14px; opacity: 0;}
+    to {left: 14px; opacity: 1;}
+}
+@-webkit-keyframes h4-336 {
+    from {left: -14px; opacity: 0;}
+    to {left: 14px; opacity: 1;}
+}
+@-moz-keyframes h4-336 {
+    from {left: -14px; opacity: 0;}
+    to {left: 14px; opacity: 1;}
+}
+@-o-keyframes h4-336 {
+    from {left: -14px; opacity: 0;}
+    to {left: 14px; opacity: 1;}
+}
+
+
+
+/**********************
+*****banner-120x600****
+***********************/
+
+#banner-120x600{
+    height: 600px;
+    width: 120px;
+}
+
+
+#banner-120x600 #bottom-bg{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    
+    visibility: hidden;
+    animation: slideinbottom 2s ease 0s forwards;
+    -webkit-animation: slideinbottom 2s ease 0s forwards;
+    -o-animation: slideinbottom 2s ease 0s forwards;
+    -moz-animation: slideinbottom 2s ease 0s forwards;
+}
+
+#banner-120x600 #top-bg{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0;
+    
+    visibility: hidden;
+    animation: slidein 2s linear 0s forwards;
+    -webkit-animation: slidein 2s linear 0s forwards;
+    -o-animation: slidein 2s linear 0s forwards;
+    -moz-animation: slidein 2s linear 0s forwards;
+}
+
+
+#banner-120x600 #food{
+    position: absolute;
+    top: 145px;
+    left: 8px;
+    z-index: 1;
+    
+    opacity: 0;
+    animation: 2s food-120 ease 2s forwards;
+    -webkit-animation: 2s food-120 ease 2s forwards;
+    -moz-animation: 2s food-120 ease 2s forwards;
+    -o-animation: 2s food-120 ease 2s forwards;
+}
+
+#banner-120x600 #stamp{
+    position: absolute;
+    bottom: 65px;
+    right: 13px;
+    z-index: 0;
+    
+    opacity: 0;
+    animation: 2s stamp-120 ease 4s forwards;
+    -webkit-animation: 2s stamp-120 ease 4s forwards;
+    -moz-animation: 2s stamp-120 ease 4s forwards;
+    -o-animation: 2s stamp-120 ease 4s forwards;
+}
+
+
+
+#banner-120x600 h1{
+
+    font-family: 'Oswald', sans-serif;
+    position: absolute;
+    top: 22px;
+    line-height: 42px;
+    color: #496d20;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    z-index: 1;
+    
+    opacity: 0;
+    animation: 2s h1-120 ease 6s forwards;
+    -webkit-animation: 2s h1-120 ease 6s forwards;
+    -moz-animation: 2s h1-120 ease 6s forwards;
+    -o-animation: 2s h1-120 ease 6s forwards;
+    
+}
+
+
+#banner-120x600 h2{
+
+    font-family: 'Julee', cursive;
+    font-size: 20px;
+    font-weight: lighter;
+    color: #fdfdfd;
+    position: absolute;
+    top: 268px;
+    line-height: 26px;
+    text-align: center;
+    z-index: 1;
+    
+    opacity: 0;
+    animation: 2s h2-120 linear 8s forwards;
+    -webkit-animation: 2s h2-120 linear 8s forwards;
+    -moz-animation: 2s h2-120 linear 8s forwards;
+    -o-animation: 2s h2-120 linear 8s forwards;
+}
+
+
+#banner-120x600 h4{
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    color: #496d20;
+    font-size: 10px;
+    text-decoration: none;
+    bottom: 7px;
+    left: 3px;
+    font-weight: bolder;
+    text-align: center;
+    z-index: 1;
+    
+    opacity: 0;
+    animation: 2s h4-120 linear 12s forwards;
+    -webkit-animation: 2s h4-120 linear 12s forwards;
+    -moz-animation: 2s h4-120 linear 12s forwards;
+    -o-animation: 2s h4-120 linear 12s forwards;
+}
+
+
+#banner-120x600 span{
+
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    color: #fdfdfd;
+    font-weight: bold;
+    background: #496d20;
+    border-radius: 10px;
+    padding: 0 20px;
+    line-height: 34px;
+    font-size: 14px;
+    z-index: 1;
+    position: absolute;
+    top: 370px;
+    left: 7px;
+    letter-spacing: 1px;
+    
+    opacity: 0;
+    animation: 2s span-120 ease 10s forwards;
+    -webkit-animation: 2s span-120 ease 10s forwards;
+    -moz-animation: 2s span-120 ease 10s forwards;
+    -o-animation: 2s span-120 ease 10s forwards;
+}
+
+
+
+/**********************
+*****animáció-120x600****
+***********************/
+
+@keyframes food-120 {
+    from {left: -200px; }
+    to {left: 8px; opacity: 1;}
+}
+@-webkit-keyframes food-120 {
+    from {left: -200px; }
+    to {left: 8px; opacity: 1;}
+}
+@-moz-keyframes food-120 {
+    from {left: -200px; }
+    to {left: 8px; opacity: 1;}
+}
+@-o-keyframes food-120 {
+    from {left: -200px; }
+    to {left: 8px; opacity: 1;}
+}
+
+
+@keyframes h1-120 {
+    from {top: -22px; opacity: 0;}
+    to {top: 22px; opacity: 1;}
+}
+@-webkit-keyframes h1-120 {
+    from {top: -22px; opacity: 0;}
+    to {top: 22px; opacity: 1;}
+}
+@-moz-keyframes h1-120 {
+    from {top: -22px; opacity: 0;}
+    to {top: 22px; opacity: 1;}
+}
+@-o-keyframes h1-120 {
+    from {top: -22px; opacity: 0;}
+    to {top: 22px; opacity: 1;}
+}
+
+@-webkit-keyframes stamp-120 {
+    from { bottom: -65px; transform: rotate(0deg); }
+    to { bottom: 65px;transform: rotate(-360deg); opacity: 1; }
+}
+@-o-keyframes stamp-120 {
+    from { bottom: -65px; transform: rotate(0deg); }
+    to { bottom: 65px;transform: rotate(-360deg); opacity: 1; }
+}
+@-moz-keyframes stamp-120 {
+    from { bottom: -65px; transform: rotate(0deg); }
+    to { bottom: 65px;transform: rotate(-360deg); opacity: 1; }
+}
+@keyframes stamp-120 {
+    from { bottom: -65px; transform: rotate(0deg); }
+    to { bottom: 65px;transform: rotate(-360deg); opacity: 1; }
+}
+
+
+@keyframes h2-120 {
+    from {left: -40px; opacity: 0;}
+    to {left: 2px; opacity: 1;}
+}
+@-webkit-keyframes h2-120 {
+    from {left: -40px; opacity: 0;}
+    to {left: 2px; opacity: 1;}
+}
+@-moz-keyframes h2-120 {
+    from {left: -40px; opacity: 0;}
+    to {left: 2px; opacity: 1;}
+}
+@-o-keyframes h2-120 {
+    from {left: -40px; opacity: 0;}
+    to {left: 2px; opacity: 1;}
+}
+
+@keyframes span-120 {
+    from {left: -7px; }
+    to {left: 7px; opacity: 1;}
+}
+@-webkit-keyframes span-120 {
+    from {left: -7px; }
+    to {left: 7px; opacity: 1;}
+}
+@-moz-keyframes span-120 {
+    from {left: -7px; }
+    to {left: 7px; opacity: 1;}
+}
+@-o-keyframes span-120 {
+    from {left: -7px; }
+    to {left: 7px; opacity: 1;}
+}
+
+
+@keyframes h4-120 {
+    from {left: -3px; opacity: 0;}
+    to {left: 3px; opacity: 1;}
+}
+@-webkit-keyframes h4-120 {
+    from {left: -3px; opacity: 0;}
+    to {left: 3px; opacity: 1;}
+}
+@-moz-keyframes h4-120 {
+    from {left: -3px; opacity: 0;}
+    to {left: 3px; opacity: 1;}
+}
+@-o-keyframes h4-120 {
+    from {left: -14px; opacity: 0;}
+    to {left: 14px; opacity: 1;}
+}
+
+
+
+/**********************
+*****banner-728x90****
+***********************/
+
+#banner-728x90{
+    height: 90px;
+    width: 728px;
+}
+
+
+#banner-728x90 #bottom-bg{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    
+    visibility: hidden;
+    animation: slideinleft 2s linear 0s forwards;
+    -webkit-animation: slideinleft 2s linear 0s forwards;
+    -o-animation: slideinleft 2s linear 0s forwards;
+    -moz-animation: slideinleft 2s linear 0s forwards;
+}
+
+#banner-728x90 #top-bg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    
+    visibility: hidden;
+    animation: slideinright 2s ease 0s forwards;
+    -webkit-animation: slideinright 2s ease 0s forwards;
+    -o-animation: slideinright 2s ease 0s forwards;
+    -moz-animation: slideinright 2s ease 0s forwards;
+}
+
+
+#banner-728x90 #food{
+    position: absolute;
+    bottom: 0;
+    left: 25px;
+    z-index: 1;
+    
+    opacity: 0;
+    animation: 2s food-728 ease 2s forwards;
+    -webkit-animation: 2s food-728 ease 2s forwards;
+    -moz-animation: 2s food-728 ease 2s forwards;
+    -o-animation: 2s food-728 ease 2s forwards;
+}
+
+#banner-728x90 #stamp{
+    position: absolute;
+    top: 4px;
+    right: 164px;
+    z-index: 0;
+    
+    opacity: 0;
+    animation: 2s stamp-728 ease 4s forwards;
+    -webkit-animation: 2s stamp-728 ease 4s forwards;
+    -moz-animation: 2s stamp-728 ease 4s forwards;
+    -o-animation: 2s stamp-728 ease 4s forwards;
+}
+
+
+
+#banner-728x90 h1{
+
+    font-family: 'Oswald', sans-serif;
+    position: absolute;
+    top: 10px;
+    left: 225px;
+    color: #496d20;
+    font-size: 28px;
+    font-weight: bold;
+    z-index: 1;
+    
+    opacity: 0;
+    animation: 2s h1-728 ease 6s forwards;
+    -webkit-animation: 2s h1-728 ease 6s forwards;
+    -moz-animation: 2s h1-728 ease 6s forwards;
+    -o-animation: 2s h1-728 ease 6s forwards;
+}
+
+
+#banner-728x90 h2{
+
+    font-family: 'Julee', cursive;
+    font-size: 20px;
+    font-weight: lighter;
+    color: #fdfdfd;
+    position: absolute;
+    top: 40px;
+    left: 187px;
+    line-height: 26px;
+    text-align: center;
+    z-index: 1;
+    
+    opacity: 0;
+    animation: 2s h2-728 linear 8s forwards;
+    -webkit-animation: 2s h2-728 linear 8s forwards;
+    -moz-animation: 2s h2-728 linear 8s forwards;
+    -o-animation: 2s h2-728 linear 8s forwards;
+}
+
+#banner-728x90 h2:last-of-type{
+    top: 61px;
+    left: 242px;
+    
+    opacity: 0;
+    animation: 2s h2last-728 linear 10s forwards;
+    -webkit-animation: 2s h2last-728 linear 10s forwards;
+    -moz-animation: 2s h2last-728 linear 10s forwards;
+    -o-animation: 2s h2last-728 linear 10s forwards;
+}
+
+
+#banner-728x90 h4{
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    color: #496d20;
+    font-size: 12px;
+    text-decoration: none;
+    bottom: 7px;
+    font-weight: bolder;
+    right: 15px;
+    z-index: 1;
+    
+    opacity: 0;
+    animation: 2s h4-728 linear 14s forwards;
+    -webkit-animation: 2s h4-728 linear 14s forwards;
+    -moz-animation: 2s h4-728 linear 14s forwards;
+    -o-animation: 2s h4-728 linear 14s forwards;
+}
+
+
+#banner-728x90 span{
+
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    color: #fdfdfd;
+    font-weight: bold;
+    background: #496d20;
+    border-radius: 10px;
+    padding: 0 25px;
+    line-height: 34px;
+    font-size: 14px;
+    z-index: 1;
+    position: absolute;
+    top: 23px;
+    right: 26px;
+    letter-spacing: 1px; 
+    
+    opacity: 0;
+    animation: 2s span-728 ease 12s forwards;
+    -webkit-animation: 2s span-728 ease 12s forwards;
+    -moz-animation: 2s span-728 ease 12s forwards;
+    -o-animation: 2s span-728 ease 12s forwards;
+}
+
+
+/**********************
+*****animáció-728x90****
+***********************/
+
+
+@-webkit-keyframes slideinright {
+    0%{ left: -7280px; visibility: visible;}
+    100%{left: 0; visibility: visible;}
+}
+
+@-o-keyframes slideinright {
+    0%{ left: -7280px; visibility: visible;}
+    100%{left: 0; visibility: visible;}
+}
+
+@-moz-keyframes slideinright {
+    0%{ left: -7280px; visibility: visible;}
+    100%{left: 0; visibility: visible;}
+}
+
+@keyframes slideinright {
+    0%{ left: -7280px; visibility: visible;}
+    100%{left: 0; visibility: visible;}
+}
+
+
+@-webkit-keyframes slideinleft {
+    0%{ right: -400px; visibility: visible;}
+    100%{right: 0; visibility: visible;}
+}
+
+@-o-keyframes slideinleft {
+    0%{ right: -400px; visibility: visible;}
+    100%{right: 0; visibility: visible;}
+}
+
+@-moz-keyframes slideinleft {
+    0%{ right: -400px; visibility: visible;}
+    100%{right: 0; visibility: visible;}
+}
+
+@keyframes slideinleft {
+    0%{ right: -400px; visibility: visible;}
+    100%{right: 0; visibility: visible;}
+}
+
+
+@keyframes food-728 {
+    from {left: -200px; }
+    to {left: 25px; opacity: 1;}
+}
+@-webkit-keyframes food-728 {
+    from {left: -200px; }
+    to {left: 25px; opacity: 1;}
+}
+@-moz-keyframes food-728 {
+    from {left: -200px; }
+    to {left: 25px; opacity: 1;}
+}
+@-o-keyframes food-728 {
+    from {left: -200px; }
+    to {left: 25px; opacity: 1;}
+}
+
+
+@keyframes h1-728 {
+    from {top: -22px; opacity: 0;}
+    to {top: 10px; opacity: 1;}
+}
+@-webkit-keyframes h1-728 {
+    from {top: -22px; opacity: 0;}
+    to {top: 10px; opacity: 1;}
+}
+@-moz-keyframes h1-728 {
+    from {top: -22px; opacity: 0;}
+    to {top: 10px; opacity: 1;}
+}
+@-o-keyframes h1-728 {
+    from {top: -22px; opacity: 0;}
+    to {top: 10px; opacity: 1;}
+}
+
+@-webkit-keyframes stamp-728 {
+    from { right: -164px; transform: rotate(0deg); }
+    to { right: 164px;transform: rotate(-360deg); opacity: 1; }
+}
+@-o-keyframes stamp-728 {
+    from { right: -164px; transform: rotate(0deg); }
+    to { right: 164px;transform: rotate(-360deg); opacity: 1; }
+}
+@-moz-keyframes stamp-728 {
+    from { right: -164px; transform: rotate(0deg); }
+    to { right: 164px;transform: rotate(-360deg); opacity: 1; }
+}
+@keyframes stamp-728 {
+    from { right: -164px; transform: rotate(0deg); }
+    to { right: 164px;transform: rotate(-360deg); opacity: 1; }
+}
+
+@keyframes h2-728 {
+    from {top: -40px; opacity: 0;}
+    to {top: 40px; opacity: 1;}
+}
+@-webkit-keyframes h2-728 {
+    from {top: -40px; opacity: 0;}
+    to {top: 40px; opacity: 1;}
+}
+@-moz-keyframes h2-728 {
+    from {top: -40px; opacity: 0;}
+    to {top: 40px; opacity: 1;}
+}
+@-o-keyframes h2-728 {
+    from {top: -40px; opacity: 0;}
+    to {top: 40px; opacity: 1;}
+}
+
+
+@keyframes h2last-728 {
+    from {top: -61px; opacity: 0;}
+    to {top: 61px; opacity: 1;}
+}
+@-webkit-keyframes h2last-728 {
+    from {top: -61px; opacity: 0;}
+    to {top: 61px; opacity: 1;}
+}
+@-moz-keyframes h2last-728 {
+    from {top: -61px; opacity: 0;}
+    to {top: 61px; opacity: 1;}
+}
+@-o-keyframes h2last-728 {
+    from {top: -61px; opacity: 0;}
+    to {top: 61px; opacity: 1;}
+}
+
+@keyframes span-728 {
+    from {right: -26px; }
+    to {right: 26px; opacity: 1;}
+}
+@-webkit-keyframes span-728 {
+    from {right: -26px; }
+    to {right: 26px; opacity: 1;}
+}
+@-moz-keyframes span-728 {
+    from {right: -26px; }
+    to {right: 26px; opacity: 1;}
+}
+@-o-keyframes span-728 {
+    from {right: -26px; }
+    to {right: 26px; opacity: 1;}
+}
+
+
+@keyframes h4-728 {
+    from {right: -15px; opacity: 0;}
+    to {right: 15px; opacity: 1;}
+}
+@-webkit-keyframes h4-728 {
+    from {right: -15px; opacity: 0;}
+    to {right: 15px; opacity: 1;}
+}
+@-moz-keyframes h4-728 {
+    from {right: -15px; opacity: 0;}
+    to {right: 15px; opacity: 1;}
+}
+@-o-keyframes h4-728 {
+    from {right: -15px; opacity: 0;}
+    to {right: 15px; opacity: 1;}
+}
+
